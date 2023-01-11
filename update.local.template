@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cd "$(dirname $0)"
+
+DISPLAY="$DISPLAY" \
+    DESKTOP_SESSION="$DESKTOP_SESSION" \
+    DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" \
+    ./test.sh -s firewatch
